@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прямокутний Перехід</title>
+    <link rel="stylesheet" href="/css/Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор прямокутного переходу</h1>
+        <form id="transitionForm">
+            <div class="input-group">
+                <label for="inputWidth">Ширина входу (мм):</label>
+                <input type="number" id="inputWidth" required>
+            </div>
+            <div class="input-group">
+                <label for="inputHeight">Висота входу (мм):</label>
+                <input type="number" id="inputHeight" required>
+            </div>
+            <div class="input-group">
+                <label for="outputWidth">Ширина виходу (мм):</label>
+                <input type="number" id="outputWidth" required>
+            </div>
+            <div class="input-group">
+                <label for="outputHeight">Висота виходу (мм):</label>
+                <input type="number" id="outputHeight" required>
+            </div>
+            <div class="input-group">
+                <label for="length">Висота переходу (мм):</label>
+                <input type="number" id="length" required>
+            </div>
+            <button type="submit">Обчислити</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="/js/Script.js"></script>
+</body>
+</html>
