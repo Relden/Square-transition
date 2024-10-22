@@ -9,11 +9,12 @@ document.getElementById('transitionForm').addEventListener('submit', function(ev
     const length = document.getElementById('length').value;
 
     // Обчислення Висоти
-    let Ah = Math.sqrt(Math.pow((a - x) / 2, 2) + Math.pow((length - 60), 2));
+    let d = Math.sqrt(Math.pow((a - x) / 2, 2) + Math.pow((y - b) / 2, 2));
+    let Ah = Math.sqrt(Math.pow((d), 2) + Math.pow((length), 2));
     Ah = Math.round(Ah)
     let f = 60.0;
     let Aha = Ah + f;
-    let Bh = Math.sqrt(Math.pow((y - b) / 2, 2) + Math.pow((Ah), 2));
+    let Bh = Math.sqrt(Math.pow((d), 2) + Math.pow((Ah), 2));
     let Bha = Bh + f;
     Bh = Math.round(Bh);
     Bha = Math.round(Bha);
