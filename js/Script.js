@@ -10,7 +10,7 @@ document.getElementById('transitionForm').addEventListener('submit', function(ev
 
     // Обчислення Висоти
     let d = Math.sqrt(Math.pow((a - x) / 2, 2) + Math.pow((y - b) / 2, 2));
-    let Ah = Math.sqrt(Math.pow((d), 2) + Math.pow((length), 2));
+    let Ah = Math.sqrt(Math.pow((d), 2) + Math.pow((length - 60), 2));
     Ah = Math.round(Ah)
     let f = 60.0;
     let Aha = Ah + f;
